@@ -19,5 +19,6 @@ jobs:
 
       - name: Do the globbing
         run: |
+          set -x
           git check-ignore -vn "XXX/\'" || :
         shell: bash
